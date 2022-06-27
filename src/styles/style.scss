@@ -1,0 +1,98 @@
+@import 'constants.scss';
+
+*, *::before , *::after {
+    box-sizing: border-box;
+    font-family: $pr-font;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $nt-dark-blue;
+}                                                               
+
+.container {
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.card {
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $nt-dark-grayish-blue;
+    color: white;
+    padding: 50px 50px 20px 50px;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 11px 11px 18px -4px rgba(29,35,47,0.75);
+
+
+
+    .button {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        
+        background-color: $pr-neon-green;
+        align-self: center;
+        justify-self: flex-end;
+        
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color:  $pr-neon-green-hover;
+        box-shadow: 0px 3px 46px 3px rgba(117,255,186,1);
+
+
+    }
+
+    .advice-number {
+        color: $pr-neon-green;
+        text-align: center;
+        letter-spacing: 6px;
+        font-size: 13px;
+    }
+    
+    .advice {
+        font-size: 24px;
+        width: 450px;
+        // align-self: center;
+        text-align: center;
+    }
+
+    .divider {
+        background-image: url("../../public/images/pattern-divider-desktop.svg");
+        width: 444px;
+        height: 16px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        align-items: center;
+        width: 400px;
+        height: 400px;
+        padding: 20px;
+        .advice {
+            width: 200px;
+        }
+        .divider {
+            background-image: url("../../public/images/pattern-divider-mobile.svg");
+            width: 295px;
+            height: 16px;
+        }
+    }
+
+}
+
+
