@@ -29,7 +29,7 @@ function Card() {
 
 
             <div className='button' onClick={HandleApi}>
-                <img src={process.env.PUBLIC_URL+"images/icon-dice.svg"} alt="" />
+                {/* <img src={process.env.PUBLIC_URL+"images/icon-dice.svg"} alt="" /> */}
             </div>
             
         </div>
